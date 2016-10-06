@@ -9,4 +9,4 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gp='git push origin HEAD'
 alias gi="git"
-alias rm_containers="docker rm $(docker ps -a | rev | cut -d" " -f1 | rev | grep -v NAMES)"
+alias rm_containers="docker rm $(docker ps -a | rev | cut -d" " -f1 | rev | grep -v NAMES) -f"
