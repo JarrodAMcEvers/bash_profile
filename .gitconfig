@@ -1,0 +1,22 @@
+[user]
+	email = jarrodamcevers@gmail.com
+	name = Jarrod McEvers
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	ci = commit
+	ff = pull --ff-only
+	rest = reset
+	put = push origin head
+	pop = stash pop
+	desc = describe --tags --long
+	amend = commit --amend --no-edit
+	dat = status
+	tst = status
+	d = diff
+	dc = diff --cached
+  gp = push origin HEAD
+[url "git@github.com:"]
+  insteadOf = https://github.com/
