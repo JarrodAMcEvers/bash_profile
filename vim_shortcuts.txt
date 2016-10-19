@@ -1,0 +1,26 @@
+VIM shortcuts
+  ~         changes case of character
+
+  w W       go to the next word
+  b B       go to the previous word
+  $         go to end of line
+  0         go to beginning of line
+
+  yy        yank line
+  dd        cut line
+  p         paste after line
+  P         paste before cursor
+  d$        cut through end of line
+  y$        copy through end of line
+  o         cursor goes to next line; insert mode active
+  dt'       cut up to '
+  yt'       copy up to '
+  u         undo
+  CTRL-r    redo
+  J         bring next line to current line
+
+  G         goes to end of file
+  100g      goes to line 100
+
+  :100,150s/jarrod/mcevers/g      replaces jarrod with mcevers between lines 100 and 150
+  :%s/jarrod/mcevers/g            global replace
