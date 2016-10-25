@@ -6,6 +6,8 @@ VIM shortcuts
   $         go to end of line
   0         go to beginning of line
 
+  <         backwards tab current line(s)
+  >         tab current line(s)
   yy        yank line
   dd        cut line
   p         paste after line
