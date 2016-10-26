@@ -26,3 +26,14 @@ VIM shortcuts
 
   :100,150s/jarrod/mcevers/g      replaces jarrod with mcevers between lines 100 and 150
   :%s/jarrod/mcevers/g            global replace
+
+  :set hls    highlights words you try to search for (/what)
+  :set nohls  no highlighting
+
+  :set nu       numbers
+  :set nonu     no numbers
+
+  :set paste    doesn't add a bunch of garbage when you try to paste
+  :set nopaste  stupid pasting (try pasting stuff with comments in it)
+
+  :retab        duh
