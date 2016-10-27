@@ -1,4 +1,7 @@
 VIM shortcuts
+  i         insert mode
+  I         insert mode, go to beginning of line
+
   ~         changes case of character
 
   w W       go to the next word
