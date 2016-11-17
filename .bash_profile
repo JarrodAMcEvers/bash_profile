@@ -15,3 +15,11 @@ alias gi="git"
 
 # docker aliases
 alias rm_containers="docker rm $(docker ps -a | rev | cut -d" " -f1 | rev | grep -v NAMES) -f"
+alias rm_images="docker rmi $(docker images -q)"
+
+alias shrug='echo "¯\_(ツ)_/¯"'
+
+# set title for iterm2 bash window
+function title {
+  echo -ne "\033]0;"$*"\007"
+}
