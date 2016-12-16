@@ -23,3 +23,8 @@ alias shrug='echo "¯\_(ツ)_/¯"'
 function title {
   echo -ne "\033]0;"$*"\007"
 }
+
+alias kp=kill_port
+function kill_port(){
+  kill $(lsof -i :$1 -t)
+}
