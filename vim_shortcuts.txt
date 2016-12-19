@@ -27,6 +27,8 @@ VIM shortcuts
   G         goes to end of file
   100g      goes to line 100
 
+  #         go to the next occurence if the word where the cursor is
+
   :100,150s/jarrod/mcevers/g      replaces jarrod with mcevers between lines 100 and 150
   :%s/jarrod/mcevers/g            global replace
 
