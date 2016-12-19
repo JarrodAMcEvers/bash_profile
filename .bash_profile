@@ -3,6 +3,9 @@ export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
 
 eval $(thefuck --alias)
 
+# clear for mac
+alias clear='/usr/bin/osascript -e "tell application \"System Events\" to tell process \"Terminal\" to keystroke \"k\" using command down"'
+
 # ls aliases
 alias ll='ls -laG'
 alias l='ls -la'
