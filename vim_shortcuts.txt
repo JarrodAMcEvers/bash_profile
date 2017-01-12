@@ -42,3 +42,4 @@ VIM shortcuts
   :set nopaste  stupid pasting (try pasting stuff with comments in it)
 
   :retab        duh
+  :set et|retab expand tabs and retab
