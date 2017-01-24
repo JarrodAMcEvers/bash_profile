@@ -15,6 +15,14 @@ alias gd='git diff'
 alias gdc='git diff --cached'
 alias gp='git push origin HEAD'
 alias gi="git"
+function clone(){
+  git clone git@github.com:$1.git $2 --recursive;
+  if [[ -z "$2" ]]; then
+    cd $1
+  else
+    cd $2
+  fi
+}
 
 # docker aliases
 alias rm_containers="docker rm $(docker ps -a | rev | cut -d" " -f1 | rev | grep -v NAMES) -f"
