@@ -49,6 +49,6 @@ function title {
 kp() {
   kill $(lsof -i :$1 -t)
 }
-declare -f kp
+export -f kp
 
 alias shrug='echo "¯\_(ツ)_/¯"'
