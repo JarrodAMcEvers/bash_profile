@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Mac profile
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
 
@@ -14,7 +16,8 @@ alias l='ls -la'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gp='git push origin HEAD'
-alias gi="git"
+alias gi='git'
+
 function clone(){
   git clone git@github.com:$1.git $2 --recursive;
   if [[ -z "$2" ]]; then
@@ -23,19 +26,29 @@ function clone(){
     cd $2
   fi
 }
+export -f clone
 
-# docker aliases
-alias rm_containers="docker rm $(docker ps -a | rev | cut -d" " -f1 | rev | grep -v NAMES) -f"
-alias rm_images="docker rmi $(docker images -q)"
-
-alias shrug='echo "¯\_(ツ)_/¯"'
+# docker helpers
+rm_containers() {
+  for i in $(docker ps -a -q)
+  do
+    docker rm $i -f
+  done
+}
+rm_images() {
+  docker rmi $(docker images -q)
+}
+export -f rm_containers
+export -f rm_images
 
 # set title for iterm2 bash window
 function title {
   echo -ne "\033]0;"$*"\007"
 }
 
-alias kp=kill_port
-function kill_port(){
+kp() {
   kill $(lsof -i :$1 -t)
 }
+declare -f kp
+
+alias shrug='echo "¯\_(ツ)_/¯"'
