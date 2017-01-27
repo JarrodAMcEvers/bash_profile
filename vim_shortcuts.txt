@@ -19,6 +19,7 @@ VIM shortcuts
   y$        copy through end of line
   o         cursor goes to next line; insert mode active
   dt'       cut up to '
+  2dt'      cut up to the second '
   yt'       copy up to '
   u         undo
   CTRL-r    redo
