@@ -1,4 +1,7 @@
 VIM shortcuts
+  CTRL + w + →                    go to the window to the right of the current one
+  CTRL + w + ←                    go to the window to the left of the current one
+  CTRL + w + r                    rotate current window to the right
   i         insert mode
   I         insert mode, go to beginning of line
 
