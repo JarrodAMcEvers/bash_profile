@@ -2,48 +2,49 @@ VIM shortcuts
   CTRL + w + →                    go to the window to the right of the current one
   CTRL + w + ←                    go to the window to the left of the current one
   CTRL + w + r                    rotate current window to the right
-  i         insert mode
-  I         insert mode, go to beginning of line
 
-  ~         changes case of character
+  i                               insert mode
+  I                               insert mode, go to beginning of line
 
-  w W       go to the next word
-  b B       go to the previous word
-  $         go to end of line
-  0         go to beginning of line
+  ~                               changes case of character
 
-  <         backwards tab current line(s)
-  >         tab current line(s)
-  yy        yank line
-  dd        cut line
-  p         paste after line
-  P         paste before cursor
-  d$        cut through end of line
-  y$        copy through end of line
-  o         cursor goes to next line; insert mode active
-  dt'       cut up to '
-  2dt'      cut up to the second '
-  yt'       copy up to '
-  u         undo
-  CTRL-r    redo
-  J         bring next line to current line
+  w W                             go to the next word
+  b B                             go to the previous word
+  $                               go to end of line
+  0                               go to beginning of line
 
-  G         goes to end of file
-  100g      goes to line 100
+  <                               backwards tab current line(s)
+  >                               tab current line(s)
+  yy                              yank line
+  dd                              cut line
+  p                               paste after line
+  P                               paste before cursor
+  d$                              cut through end of line
+  y$                              copy through end of line
+  o                               cursor goes to next line; insert mode active
+  dt'                             cut up to '
+  2dt'                            cut up to the second '
+  yt'                             copy up to '
+  u                               undo
+  CTRL-r                          redo
+  J                               bring next line to current line
 
-  #         go to the next occurence if the word where the cursor is
+  G                               goes to end of file
+  100g                            goes to line 100
+
+  #                               go to the next occurence if the word where the cursor is
 
   :100,150s/jarrod/mcevers/g      replaces jarrod with mcevers between lines 100 and 150
   :%s/jarrod/mcevers/g            global replace
 
-  :set hls    highlights words you try to search for (/what)
-  :set nohls  no highlighting
+  :set hls                        highlights words you try to search for (/what)
+  :set nohls                      no highlighting
 
-  :set nu       numbers
-  :set nonu     no numbers
+  :set nu                         numbers
+  :set nonu                       no numbers
 
-  :set paste    doesn't add a bunch of garbage when you try to paste
-  :set nopaste  stupid pasting (try pasting stuff with comments in it)
+  :set paste                      doesn't add a bunch of garbage when you try to paste
+  :set nopaste                    stupid pasting (try pasting stuff with comments in it)
 
-  :retab        duh
-  :set et|retab expand tabs and retab
+  :retab                          duh
+  :set et|retab                   expand tabs and retab
