@@ -51,4 +51,9 @@ kp() {
 }
 export -f kp
 
+tag() {
+  git tag | sort | grep -v v | tail -1
+}
+export -f tag
+
 alias shrug='echo "¯\_(ツ)_/¯"'
