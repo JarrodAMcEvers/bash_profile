@@ -30,7 +30,8 @@ VIM shortcuts
   J                               bring next line to current line
 
   G                               goes to end of file
-  100g                            goes to line 100
+  100G                            goes to line 100
+  H                               goes to beginning of file
 
   #                               go to the next occurence if the word where the cursor is
 
