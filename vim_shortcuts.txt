@@ -31,7 +31,6 @@ VIM shortcuts
 
   G                               goes to end of file
   100G                            goes to line 100
-  H                               goes to beginning of file
 
   #                               go to the next occurence if the word where the cursor is
 
