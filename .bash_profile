@@ -53,6 +53,11 @@ kp() {
 }
 export -f kp
 
+flushdns() {
+  sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder;
+}
+export -f flushdns
+
 # clear for mac
 alias clear='/usr/bin/osascript -e "tell application \"System Events\" to tell process \"Terminal\" to keystroke \"k\" using command down"'
 
