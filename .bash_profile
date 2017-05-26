@@ -62,3 +62,11 @@ export -f flushdns
 alias clear='/usr/bin/osascript -e "tell application \"System Events\" to tell process \"Terminal\" to keystroke \"k\" using command down"'
 
 alias shrug='echo "¯\_(ツ)_/¯"'
+
+
+devs() {
+  DEVS="$@"
+}
+commit() {
+  git commit -m "$@ [$DEVS]"
+}
