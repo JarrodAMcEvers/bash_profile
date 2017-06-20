@@ -64,9 +64,15 @@ alias clear='/usr/bin/osascript -e "tell application \"System Events\" to tell p
 alias shrug='echo "¯\_(ツ)_/¯"'
 
 
+preview() {
+  echo "$MSG [$DEVS]"
+}
 devs() {
   DEVS="$@"
 }
+message(){
+  MSG="$@"
+}
 commit() {
-  git commit -m "$@ [$DEVS]"
+  git commit -m "$MSG [$DEVS]"
 }
