@@ -63,6 +63,14 @@ alias clear='/usr/bin/osascript -e "tell application \"System Events\" to tell p
 
 alias shrug='echo "¯\_(ツ)_/¯"'
 
+# what the string would be returned after grep (rds_password: 'password')
+# removes everything expect the password without the single quotes
+# rev = reverse
+# cut -d = cut to delimiter -f1 = first substring up to delimiter
+psql_dev() {
+  password=$(ansible_vault view ~/repos/ansible_aws/asset_defs/dev/base_config.yml | grep rds_password | rev | cut -d ' ' -f1 | rev | sed "s/\'//g")
+  PGPASSWORD=$password psql -h [host] -U [user] [database]
+}
 
 preview() {
   echo "$MSG [$DEVS]"
