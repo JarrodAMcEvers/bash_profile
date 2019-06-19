@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+git diff --cached --unified=0 | egrep -q '^\+{1}[^++]' | egrep -qr '\.only|\.skip' {test,uats} | egrep -q '\.js|\.ts'
+if [[ $? -ne 0 ]]; then
+  cat <<FIN
+      _______
+    .'.     .'.     _______________________
+   / .|\ _ /|. \   /                       \\
+  : :  \\ //  : :   |  YOUR COMMIT ASPLODE!  |
+  : : (_\V/_) : :  \\                       /
+  : :  .-v-.  : :   -----------------------
+  :  \ |   | /  :  /
+   \  \|   |/  / _/
+    \   ===   /
+     '..___..'
+FIN
+  echo -e "\nCommit contains .only or .skip, pre-commit failed."
+  exit 1
+fi
